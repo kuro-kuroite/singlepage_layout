@@ -1,0 +1,94 @@
+.works
+  background-color #383634
+  padding 80px
+
+.works-wrapper
+  // HACK: flexbox を使用
+  display flex
+  flex-wrap wrap
+  justify-content flex-start
+  margin-top 60px
+
+.work-box
+  flex 0 0 300px
+  position relative
+  // HACK: ひとまず、(300px * 0.6) とする
+  margin 0 0 (300px * 0.6)
+
+  &::after
+    background no-repeat
+    background-size 100% 100%
+    content ''
+    height 100%
+    left 0
+    opacity 0.2
+    position absolute
+    // HACK: 50% -> 100% flex の影響
+    top 100%
+    transform scaleY(-1)
+    width 100%
+
+  &.tree::after
+    background-image url('./images/tree.jpg')
+
+  &.building::after
+    background-image url('./images/building.jpg')
+
+  &.lake::after
+    background-image url('./images/lake.jpg')
+
+  &.sky::after
+    background-image url('./images/sky.jpg')
+
+  // TODO: 上下反転する
+  // &:nth-child(odd)
+  //   & .work-image
+  //     margin (300px * 0.6) 0 0
+  //
+  //   & .work-description,
+  //   &::after
+  //     top 0
+
+.work-image
+  display block
+  width 100%
+
+.work-description
+  align-items center
+  // HACK flex and justify-content, align-items center
+  display flex
+  height 100%
+  justify-content center
+  left 0
+  overflow-y auto
+  position absolute
+  // HACK: 50% -> 100% flex の影響
+  top 100%
+  width 100%
+  z-index 1
+
+.work-text
+  font-size 1.2rem
+  line-height 2
+
+  & .button
+    // HACK extends .header .button
+    background-color #afa58d
+    border-radius 4px
+    color #fff
+    display inline-block
+    font-size 1.2rem
+    letter-spacing 1px
+    margin 10px
+    padding 20px
+    text-decoration none
+    width 200px
+
+    // HACK: chage display block from width 60%
+    display block
+    margin-top 20px
+    padding 3px
+
+  & .button-ghost
+    border 1px solid #fff
+    background-color rgba(255, 255, 255, 0.15)
