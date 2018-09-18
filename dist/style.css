@@ -242,6 +242,51 @@ body {
 .buttons .button-showy {
   background-color: #f1b400;
 }
+.contact {
+  padding: 80px 0 150px;
+}
+.contact-form {
+  margin: 50px auto 0;
+  width: 50%;
+}
+.contact-form input[type=text],
+.contact-form textarea {
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 0;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+}
+.contact-form :placeholder-shown,
+.contact-form ::-webkit-input-placeholder {
+  color: rgba(255,255,255,0.6);
+  opacity: 1;
+}
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 8px rgba(255,255,255,0.5) inset;
+}
+.contact-form textarea {
+  height: 150px;
+}
+.contact-form input[type=submit] {
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 5px;
+  color: rgba(255,255,255,0.6);
+  cursor: pointer;
+  display: block;
+  margin: 40px auto 0;
+  padding: 15px;
+  width: 200px;
+}
+.contact-form input[type=submit]:hover {
+  background-color: rgba(255,255,255,0.05);
+}
 .header {
   padding: 170px 30px 80px;
 }
