@@ -420,6 +420,12 @@ body {
   position: relative;
   margin: 0 0 180px;
 }
+.work-box:hover img {
+  transform: scale(1.1);
+}
+.work-box img {
+  transition: transform 0.5s ease-in-out;
+}
 .work-box::after {
   background: no-repeat;
   background-size: 100% 100%;

@@ -11,9 +11,16 @@
 
 .work-box
   flex 0 0 300px
+  // overflow hidden
   position relative
   // HACK: ひとまず、(300px * 0.6) とする
   margin 0 0 (300px * 0.6)
+
+  &:hover img
+    transform scale(1.1)
+
+  & img
+    transition transform 0.5s ease-in-out
 
   &::after
     background no-repeat
