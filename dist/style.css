@@ -224,6 +224,17 @@ body {
   line-height: 2.5;
   margin: 30px;
 }
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+  body {
+    font-size: 1.3rem;
+  }
+  .about-text {
+    line-height: 1.8;
+  }
+}
 .buttons .button {
   background-color: #afa58d;
   border-radius: 4px;
