@@ -318,6 +318,24 @@ body {
   font-size: 1.6rem;
   margin-bottom: 50px;
 }
+@media (max-width: 768px) {
+  .header {
+    padding-top: 60px;
+  }
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+  .site-title {
+    font-size: 5rem;
+    margin-top: 35px;
+  }
+}
 .skills {
   background-color: #fff;
   color: #333;
