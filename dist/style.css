@@ -210,12 +210,14 @@ body {
 }
 .heading::before,
 .heading::after {
-  border-bottom: 1px solid #999;
-  bottom: 0;
+  border: 1px solid;
   content: '';
-  left: 0;
-  position: absolute;
-  right: 0;
+  display: inline-block;
+  height: 12px;
+  margin: 0 20px;
+  transform: rotate(45deg);
+  vertical-align: middle;
+  width: 12px;
 }
 .heading::before {
   bottom: 5px;
@@ -233,6 +235,11 @@ body {
   }
   .about-text {
     line-height: 1.8;
+  }
+  .heading::before,
+  .heading::after {
+    height: 8px;
+    width: 8px;
   }
 }
 .buttons .button {
